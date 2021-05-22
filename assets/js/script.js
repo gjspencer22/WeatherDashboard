@@ -85,9 +85,9 @@ function dubai() {
 }
 function slc() {
     var city7 = document.querySelector('city7');
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=saltlake&appid=7938b2c7d262537079eede933a87d70c')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=salt%20lake&appid=7938b2c7d262537079eede933a87d70c')
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => displayCity(data))
 }
 
 // fucntion find() {
@@ -97,10 +97,27 @@ function slc() {
 //    }
 
    function find() {
-    // var city7 = document.querySelector('city7');
-    fetch('api.openweathermap.org/data/2.5/weather?q=' + 
+       var findCity = document.getElementById('findCity');
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + 
     findCity.value + 
     '&appid=7938b2c7d262537079eede933a87d70c')
     .then(response => response.json())
     .then(data => console.log(data))
+
+   }
+
+   function displayCity(data) {
+    var displayCity = document.getElementById('currentCity');
+    console.log(data);
+    
+    var temp = data.main.temp -273.15 
+    var name = data.name
+    var weather = data.weather[0].description
+    var country = data.sys.country 
+    displayCity.innerText = name
+    displayCity.innerText = temp
+    displayCity.innerText = weather
+    displayCity.innerText = country
+    
+    
    }
