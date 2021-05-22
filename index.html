@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Weather Dashboard</title>
+
+</head>
+
+<body>
+    <div class="page">
+            <div class="headline">
+                <h1>Weather Dashboard</h1>
+            </div>
+            <div class="searchHeadline">
+                <h1>Search for a City:</h1>
+                <input type="text" id="findCity" placeholder="Salt Lake City">
+                
+                <!-- <button onclick="getWeather()">Find City</button> -->
+                <button onclick="find()">Submit</button>
+                
+            </div>
+        <div class="cityList">
+            <div class="city1">
+                <button onclick="moscow()">Moscow</button>
+            </div>
+            <div class="city2">
+                <button onclick="london()">London</button>
+            </div>
+            <div class="city3">
+                <button onclick="seattle()">Seattle</button>
+            </div>
+            <div class="city4">
+                <button onclick="sydney()">Sydney</button>
+            </div>
+            <div class="city5">
+                <button onclick="beijing()">Beijing</button>
+            </div>
+            <div class="city6">
+                <button onclick="dubai()">Dubai</button>
+            </div>
+            <div class="city7">
+                <button onclick="slc()">Salt Lake City</button>
+            </div>
+            <div class="city8"></div>
+
+        </div>
+
+        <div class="currentCity"></div>
+
+        <div class="forecast" id ="forecastBox">
+            <h2>5-Day Forecast:</h2> 
+            <div class="day1"></div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
