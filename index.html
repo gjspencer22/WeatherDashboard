@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -18,32 +21,32 @@
         <input type="text" id="findCity" placeholder="Salt Lake City" />
 
         <!-- <button onclick="getWeather()">Find City</button> -->
-        <button onclick="find()">Submit</button>
+        <button onclick="find()" class="btn btn-primary">Submit</button>
       </div>
       <div class="cityList">
         <div class="city1">
-          <button>Moscow</button>
+          <button class="btn btn-primary">Moscow</button>
         </div>
         <div class="city2">
-          <button onclick=>London</button>
+          <button class="btn btn-primary">London</button>
         </div>
         <div class="city3">
-          <button>Seattle</button>
+          <button class="btn btn-primary">Seattle</button>
         </div>
         <div class="city4">
-          <button>Sydney</button>
+          <button class="btn btn-primary">Sydney</button>
         </div>
         <div class="city5">
-          <button>Beijing</button>
+          <button class="btn btn-primary">Beijing</button>
         </div>
         <div class="city6">
-          <button>Dubai</button>
+          <button class="btn btn-primary">Dubai</button>
         </div>
         <div class="city7">
-          <button>Salt Lake City</button>
+          <button class="btn btn-primary">Salt Lake City</button>
         </div>
         <div class="city8">
-          <button>Dallas</button>
+          <button class="btn btn-primary">Dallas</button>
         </div>
       </div>
       <div id="infoCard">
@@ -56,6 +59,7 @@
         <h2>5-Day Forecast:</h2>
         <div class="day1"></div>
       </div>
+      <div class="currentDay"></div>
     </div>
     <script src="assets/js/script.js"></script>
   </body>

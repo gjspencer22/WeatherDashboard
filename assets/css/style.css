@@ -15,3 +15,13 @@ button {
 color:#050;
 border-radius: 15%;
 }
+p{
+    color: red;;
+}
+.cityList {
+    text-align: center;
+    display:flex;
+    flex-direction:row;
+    height: 35%;
+    padding: 45px;
+}

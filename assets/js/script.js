@@ -12,12 +12,13 @@ function find() {
         '&appid=7938b2c7d262537079eede933a87d70c')
         .then(response => response.json())
         .then(data => showCity(data))
-        // .catch(function (error) {
-        //     alert
+        .catch(function (error) {
+            alert('Unable to find city.')
             
-        // })
+        })
  
 }
+
 function cityButtonClick(event) {
     
     if (event.target.localName === 'button') {
