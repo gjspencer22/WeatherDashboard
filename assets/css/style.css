@@ -22,10 +22,12 @@ p {
 .cityList {
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   height: 35%;
   padding: 45px;
   border: 1px solid;
+  
 }
 #infoCard {
   text-align: center;
