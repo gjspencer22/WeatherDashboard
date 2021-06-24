@@ -1,27 +1,43 @@
 .headline {
-    border: 1px solid;
-    background-color: rgb(159, 209, 207);
-    text-align: center;
+  border: 1px solid;
+  background-color: rgb(159, 209, 207);
+  text-align: center;
 }
- .page{
-background-color: aliceblue;
- }
+.page {
+  background-color: aliceblue;
+}
 
 .cityList {
-    background-color: #e7e7e7; 
-    color: black;
+  background-color: #e7e7e7;
+  color: black;
 }
 button {
-color:#050;
-border-radius: 15%;
+  color: #050;
+  border-radius: 15%;
 }
-p{
-    color: red;;
+p {
+  color: #050;
+  font-family: monospace;
 }
 .cityList {
-    text-align: center;
-    display:flex;
-    flex-direction:row;
-    height: 35%;
-    padding: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 35%;
+  padding: 45px;
+  border: 1px solid;
+}
+#infoCard {
+  text-align: center;
+  font-size: 35px;
+  border-style: solid;
+  border: black;
+}
+.searchHeadline {
+  text-align: center;
+}
+#findCity {
+  border: black;
+  border-width: 2px;
+  border-style: solid;
 }

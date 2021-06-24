@@ -27,11 +27,6 @@ function cityButtonClick(event) {
             '&appid=7938b2c7d262537079eede933a87d70c')
             .then(response => response.json())
             .then(data => showCity(data))
-            // .catch(function (error) {
-            //     alert
-            // })
-            // console.log(cityButtonClick);
-           
     }
 
 }
@@ -51,7 +46,7 @@ function showCity(data) {
     displayCity.innerHTML = currentCity(name, temp, weather,country);
 }
 function currentCity(name, temp, weather,country) {
-    var template = `<div><p>${name}</p><p>${temp}&deg; F</p><p>The skies are ${weather}</p><p>${country}</p></div>`
+    var template = `<div><p>City: ${name}</p><p>${temp}&deg; F</p><p>Today we have ${weather}</p><p>Country: ${country}</p></div>`
     return template;
 }
 
